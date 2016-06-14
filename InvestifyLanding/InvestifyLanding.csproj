@@ -30,6 +30,7 @@
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\plane.jpg" />
     <Content Include="img\downloads-bg.jpg" />
     <Content Include="img\intro-bg.jpg" />
     <Content Include="img\map-marker.png" />

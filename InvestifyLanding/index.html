@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>TypeScript HTML App</title>
     <link rel="stylesheet" href="app.css" type="text/css"/>
 
     <meta charset="utf-8">
@@ -18,7 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">ñ
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -40,7 +39,7 @@
     <script src="js/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFhQfk7cke1gftID5uycjpuiwO1bTx1pE"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
@@ -53,7 +52,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-                <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+                <i class="fa fa-play-circle"></i> <span class="light">Investify</span> 
             </a>
         </div>
 
@@ -65,21 +64,49 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#howitworks">¿Cómo funciona?</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#download">Download</a>
+                    <a class="page-scroll" href="#aboutus">Nosotros</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Contacto</a>
                 </li>
             </ul>
+            <div class="nav navbar-right navbar-btn">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#notifyme">¡Notifícame!</button>
+            </div>
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
 
+<!--Modal Notify Me-->
+<div id="notifyme" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!--The actual content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="color:black">Mantente informado</h4>
+            </div>
+            <div class="modal-body">
+                <p style="color:black">Déjanos tu correo para avisarte en cuanto Investify esté disponible</p>
+                <form role="form">
+                <div class="form-group">
+                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+                  <input type="text" class="form-control" id="usrname" placeholder="Escribe tu email">
+                </div>
+                <button type="submit" class="btn btn-default btn-success btn-block"><!--<span class="glyphicon glyphicon-off"></span>--> Registrarme</button>
+          </form>
+            </div>
+    <!--        <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>-->
+        </div>
+    </div>
+</div>
 <!-- Intro Header -->
 <header class="intro">
     <div class="intro-body">
@@ -87,9 +114,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading">Investify</h1>
-                    <p class="intro-text">Tu dinero en piloto automático
-                    </p>
-                    <a href="#about" class="btn btn-circle page-scroll">
+                    <p class="intro-text">Tu dinero en piloto automático</p>
+                    <a href="#howitworks" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
@@ -98,28 +124,25 @@
     </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="container content-section text-center">
+<!-- Como funciona -->
+<section id="howitworks" class="container content-section text-center">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-            <h2>About Grayscale</h2>
-            <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.
+            <h2>¿Cómo funciona?</h2>
+            <p>Investify es una plataforma ....
             </p>
-            <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.
-            </p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
         </div>
     </div>
 </section>
 
-<!-- Download Section -->
-<section id="download" class="content-section text-center">
-    <div class="download-section">
+<!-- Nosotros -->
+<section id="aboutus" class="content-section text-center">
+    <div class="aboutus-section">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Download Grayscale</h2>
-                <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                <h2>Nosotros</h2>
+                <p>Investify es una iniciativa por parte de <a href="http://gbm.com.mx">GBM</a> Grupo Bursátil Mexicano para democratizar las inversiones en México</p>             <!-- Mapa -->
+                 <div id="map"></div>   
             </div>
         </div>
     </div>
@@ -130,7 +153,7 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
             <h2>Contáctanos</h2>
-            <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
+            <p>Choro choro</p>
             <p>
                 <a href="mailto:investify@gbm.com.mx">investify@gbm.com.mx</a>
             </p>
@@ -139,18 +162,13 @@
                     <a href="https://twitter.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                 </li>
                 <li>
-                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    <a href="https://facebook.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                 </li>
             </ul>
         </div>
     </div>
 </section>
 
-<!-- Map Section -->
-<div id="map"></div>
 
 <!-- Footer -->
 <footer>
