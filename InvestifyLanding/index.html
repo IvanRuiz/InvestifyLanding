@@ -2,8 +2,8 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="app.css" type="text/css"/>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="app.css" type="text/css" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +18,8 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+
+    <link href="app.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -44,138 +46,241 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
-<!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <i class="fa fa-play-circle"></i> <span class="light">Investify</span> 
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#howitworks">¿Cómo funciona?</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#aboutus">Nosotros</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contacto</a>
-                </li>
-            </ul>
-            <div class="nav navbar-right navbar-btn">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#notifyme">¡Notifícame!</button>
-            </div>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-
-<!--Modal Notify Me-->
-<div id="notifyme" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <!--The actual content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title" style="color:black">Mantente informado</h4>
-            </div>
-            <div class="modal-body">
-                <p style="color:black">Déjanos tu correo para avisarte en cuanto Investify esté disponible</p>
-                <form role="form">
-                <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
-                  <input type="text" class="form-control" id="usrname" placeholder="Escribe tu email">
-                </div>
-                <button type="submit" class="btn btn-default btn-success btn-block"><!--<span class="glyphicon glyphicon-off"></span>--> Registrarme</button>
-          </form>
-            </div>
-    <!--        <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-            </div>-->
-        </div>
-    </div>
-</div>
-<!-- Intro Header -->
-<header class="intro">
-    <div class="intro-body">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1 class="brand-heading">Investify</h1>
-                    <p class="intro-text">Tu dinero en piloto automático</p>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i><span class="light">Investify</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#howitworks">¿Cómo funciona?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#aboutus">Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav navbar-right navbar-btn">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#notifyme">¡Notifícame!</button>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!--Modal Notify Me-->
+    <div id="notifyme" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!--The actual content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Mantente informado</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Déjanos tu correo para avisarte en cuanto Investify esté disponible</p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control text-center" id="usrname" placeholder="Escribe tu email">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-success btn-block">Registrarme</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Los planos de tu vida</h1>
+                        <p class="intro-text">
+                            Investify es la plataforma de inversión inteligente para cumplir con tu proyecto de vida
+                            <br />
+                            ¡Muy Pronto!
+                            <br />
+                        </p>
+                        <form role="form" class="form-inline">
+                            <div class="form-group form-group-lg">
+                                <input type="text" class="form-control text-center" id="emailIntro" placeholder="Déjanos tu email...">
+                                <button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" style="margin: 30px">
                     <a href="#howitworks" class="btn btn-circle page-scroll">
                         <i class="fa fa-angle-double-down animated"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<!-- Como funciona -->
-<section id="howitworks" class="container content-section text-center">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2>¿Cómo funciona?</h2>
-            <p>Investify es una plataforma ....
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Nosotros -->
-<section id="aboutus" class="content-section text-center">
-    <div class="aboutus-section">
+    <!-- Como funciona -->
+    <section id="howitworks" class="container content-section">
+        <h2>¿Cómo funciona?</h2>
         <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Nosotros</h2>
-                <p>Investify es una iniciativa por parte de <a href="http://gbm.com.mx">GBM</a> Grupo Bursátil Mexicano para democratizar las inversiones en México</p>             <!-- Mapa -->
-                 <div id="map"></div>   
+            <div class="list-group col-md-3">
+                <div class="list-group-item active">
+                    <h4 class="list-group-item-heading">Creación de la cuenta</h4>
+                </div>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        Abre tu cuenta en 5 minutos
+                            <br />
+                    </p>
+                    <p class="list-group-item-text">
+                        Contestando un cuestionario, Investify crea el mejor plan de inversión personal en base a tus necesidades
+                            <br />
+                    </p>
+                </a>
+            </div>
+            <div class="list-group col-md-3">
+                <div class="list-group-item active">
+                    <h4 class="list-group-item-heading">Sistema Inteligente</h4>
+                </div>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        Al hacer tu primer depósito, nuestro sistema inteligente basado en algoritmos, invertirá por ti
+                            <br />
+                    </p>
+                    <p class="list-group-item-text">
+                        Contestando un cuestionario, Investify crea el mejor plan de inversión personal en base a tus necesidades
+                            <br />
+                    </p>
+                </a>
+            </div>
+            <div class="list-group col-md-3">
+                <div class="list-group-item active">
+                    <h4 class="list-group-item-heading">Interés Compuesto</h4>
+                </div>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        Re-invertimos tus utilidades para generar crecimiento exponencial de tu inversión en el largo plazo
+                            <br />
+                    </p>
+                </a>
+            </div>
+            <div class="list-group col-md-3">
+                <div class="list-group-item active">
+                    <h4 class="list-group-item-heading">Consultas</h4>
+                </div>
+                <a class="list-group-item">
+                    <p class="list-group-item-text">
+                        Monitorea el estado de tu inversión 24/7
+                            <br />
+                    </p>
+                    <p class="list-group-item-text">
+                        Sin sucursales, sin papeles. Todo en línea y a tu alcance permanentemente
+                            <br />
+                    </p>
+                </a>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="container content-section text-center">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h2>Contáctanos</h2>
-            <p>Choro choro</p>
-            <p>
-                <a href="mailto:investify@gbm.com.mx">investify@gbm.com.mx</a>
-            </p>
-            <ul class="list-inline banner-social-buttons">
+        <!--Tu dinero-->
+        <div class="row match-my-cols">
+            <h2>¿En	dónde invertimos tu dinero?</h2>
+            <ul>
+                <li><p>Se invierte en los fondos de <a href="http://gbm.com.mx">GBM</a> Grupo Bursátil Mexicano</p></li>
+                <li><p>Son 23 fondos para persona físicas</p></li>
+                <li><p>Rendimiento de GBM Fondos de 5.40% en los últimos 10 años, superando el 4.60% de otros fondos del mercado y el 4.45% de CETES a 28 días</p></li>
+                <li><p>Diversificación de portafolio diseñada específicamente para cada inversionista</p></li>
                 <li>
-                    <a href="https://twitter.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                </li>
-                <li>
-                    <a href="https://facebook.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h3>Premios</h3></div>
+                    </div>
                 </li>
             </ul>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!--First banner-->
+    <section id="bannerFirst" class="content-section text-center">
+        <div class="container">
+            <p class="jumbotron" style="color:black">Deja de pasar el presente preocupado por el futuro</p>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="aboutus" class="content-section text-center">
+        <div class="aboutus-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Nosotros</h2>
+                    <p>Somos una iniciativa por parte de <a href="http://gbm.com.mx">GBM</a> Grupo Bursátil Mexicano, institución financiera con más de 35 años de experiencia en inversiones y líder en el mercado mexicano.</p>
+                    <p>Fuimos creados para que más mexicanos tengan la seguridad de que su trabajo se verá recompensado en el futuro.</p>
+                    <p>Estamos regulados por la CNBV y verificados por la AMIPCI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Second Banner-->
+    <section id="secondBanner" class="content-section text-center">
+        <div class="container jumbotron">
+            <h1 style="color: black">Si quieres tener más información</h1>
+            <p style="color: black">Déjanos tu correo</p>
+            <form role="form" class="form-inline">
+                <div class="form-group form-group-lg">
+                    <input type="text" class="form-control text-center" id="emailClose" placeholder="Tu correo aquí...">
+                </div>
+                <button type="submit" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-envelope"></span></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contáctanos</h2>
+                <p><a href="#">Aviso de privacidad</a></p>
+                <p>
+                    <a href="mailto:investify@gbm.com.mx">investify@gbm.com.mx</a>
+                </p>
+                <p>Av. Insurgentes Sur 1605 <br /> Piso 22 <br /> Col: San José Insurgentes CP: 03900 <br /> México, D.F.</p>
+                <!-- Mapa -->
+                <div id="map"></div>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
-<!-- Footer -->
-<footer>
-    <div class="container text-center">
-        <p>Copyright &copy; GBM Investify 2016</p>
-    </div>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; GBM Investify 2016</p>
+            <p>Hecho con orgullo y esfuerzo desde la CDMX</p>
+        </div>
+    </footer>
 
 
 </body>
