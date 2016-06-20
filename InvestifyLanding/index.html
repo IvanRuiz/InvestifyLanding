@@ -30,7 +30,7 @@
     <script src="app.js"></script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" onload="load()" data-target=".navbar-fixed-top">
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -260,12 +260,9 @@
                     <a href="mailto:investify@gbm.com.mx">investify@gbm.com.mx</a>
                 </p>
                 <p>Av. Insurgentes Sur 1605
-                    <br />
-                    Piso 22
-                    <br />
-                    Col: San José Insurgentes CP: 03900
-                    <br />
-                    México, D.F.</p>
+                    <br /> Piso 22
+                    <br /> Col: San José Insurgentes CP: 03900
+                    <br /> México, D.F.</p>
                 <!-- Mapa -->
                 <div id="map" class="col-lg-4"></div>
             </div>
@@ -277,13 +274,13 @@
     <footer>
         <div class="container text-center">
             <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://facebook.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
-                    </li>
-                </ul>
+                <li>
+                    <a href="https://twitter.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i><span class="network-name">Twitter</span></a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/Investify" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i><span class="network-name">Facebook</span></a>
+                </li>
+            </ul>
             <p>Copyright &copy; GBM Investify 2016</p>
             <p>Hecho con orgullo y esfuerzo desde la CDMX</p>
             <p><a href="#">Aviso de privacidad</a></p>
@@ -295,11 +292,11 @@
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyC1oeAnCyWtCJSL5mC2V4c_eNBjqjHyj5U",
-            authDomain: "investifytest-48b67.firebaseapp.com",
-            databaseURL: "https://investifytest-48b67.firebaseio.com",
-            storageBucket: "investifytest-48b67.appspot.com",
-        };
+            apiKey: "AIzaSyC1oeAnCyWtCJSL5mC2V4c_eNBjqjHyj5U"
+            , authDomain: "investifytest-48b67.firebaseapp.com"
+            , databaseURL: "https://investifytest-48b67.firebaseio.com"
+            , storageBucket: "investifytest-48b67.appspot.com"
+        , };
         firebase.initializeApp(config);
 
         // Get a reference to the database service
@@ -311,7 +308,7 @@
             var errorMessage = error.message;
             // ...
         });
-        
+
         function firebaseAnalytics(id) {
             switch (id) {
             case 'howitworks':
@@ -357,6 +354,13 @@
                 });
                 break;
             }
+        }
+
+        function load() {
+            var incrementalCounter = database.ref('landings/landing_01/users');
+            incrementalCounter.transaction(function (currentCounter) {
+                return currentCounter + 1;
+            });
         }
     </script>
 
